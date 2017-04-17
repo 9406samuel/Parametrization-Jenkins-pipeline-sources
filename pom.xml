@@ -11,7 +11,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
   <properties>
     <osbHome>/root/Oracle/Middleware/Oracle_OSB1</osbHome>
   </properties>
- 
+
+  
+  <echo>
   <settings>
     <proxies>
       <proxy>
@@ -25,7 +27,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
       </proxy>
     </proxies>
   </settings>
-
+  </echo>
+  
   <build>
     <plugins>
       <plugin>
