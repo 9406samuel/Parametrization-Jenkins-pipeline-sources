@@ -13,7 +13,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
   </properties>
 
   
-  <echo>
+  <!--
   <settings>
     <proxies>
       <proxy>
@@ -27,7 +27,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
       </proxy>
     </proxies>
   </settings>
-  </echo>
+  -->
   
   <build>
     <plugins>
