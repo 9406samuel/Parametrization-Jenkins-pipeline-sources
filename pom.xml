@@ -9,7 +9,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
  
   <dependencies/>
   <properties>
-    <osbHome>${project.basedir}/osb_11G_dependencies/Oracle_OSB1</osbHome>
+    <osbHome>/root/Oracle/Middleware/Oracle_OSB1</osbHome>
   </properties>
  
   <build>
