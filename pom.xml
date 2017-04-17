@@ -12,6 +12,20 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
     <osbHome>/root/Oracle/Middleware/Oracle_OSB1</osbHome>
   </properties>
  
+  <settings>
+    <proxies>
+      <proxy>
+        <id>fevernova</id>
+        <active>true</active>
+        <protocol>http</protocol>
+        <host>10.200.105.145</host>
+        <port>80</port>
+        <username>sacabezasti</username>
+        <password>C@bezas9406</password>
+      </proxy>
+    </proxies>
+  </settings>
+
   <build>
     <plugins>
       <plugin>
