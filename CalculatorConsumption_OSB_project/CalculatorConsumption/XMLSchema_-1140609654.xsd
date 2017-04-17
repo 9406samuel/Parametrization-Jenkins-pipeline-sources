@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Oracle JAX-WS 2.1.5. --><xs:schema xmlns:tns="http://calculator.me.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://calculator.me.org/">
+
+<xs:element name="addition" type="tns:addition"/>
+
+<xs:element name="additionResponse" type="tns:additionResponse"/>
+
+<xs:element name="division" type="tns:division"/>
+
+<xs:element name="divisionResponse" type="tns:divisionResponse"/>
+
+<xs:element name="product" type="tns:product"/>
+
+<xs:element name="productResponse" type="tns:productResponse"/>
+
+<xs:element name="substraction" type="tns:substraction"/>
+
+<xs:element name="substractionResponse" type="tns:substractionResponse"/>
+
+<xs:complexType name="substraction">
+<xs:sequence>
+<xs:element name="i" type="xs:int"/>
+<xs:element name="j" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="substractionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="product">
+<xs:sequence>
+<xs:element name="i" type="xs:int"/>
+<xs:element name="j" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="productResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addition">
+<xs:sequence>
+<xs:element name="i" type="xs:int"/>
+<xs:element name="j" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="additionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="division">
+<xs:sequence>
+<xs:element name="i" type="xs:int"/>
+<xs:element name="j" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divisionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

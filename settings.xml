@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p:configjarSettings xmlns:p="http://www.bea.com/alsb/tools/configjar/config">
+  <p:source>
+<!--OSB project sources directory-->
+    <p:project dir="CalculatorConsumption_OSB_project/CalculatorConsumption"/>
+<!--exclude some files in jar building-->
+    <p:fileset>
+      <p:exclude name="*/target/**" />
+      <p:exclude name="*/security/**" />
+      <p:exclude name="*/.settings/**" />
+      <p:exclude name="*/import.*" />
+      <p:exclude name="*/alsbdebug.xml" />
+      <p:exclude name="*/configfwkdebug.xml" />
+      <p:exclude name="*/pom.xml" />
+      <p:exclude name="*/settings.xml" />
+      <p:exclude name="*/sbconfigCalculator.jar" />
+    </p:fileset>
+  </p:source>
+<!--name and directory where the desired jar will be located-->
+  <p:configjar jar="generatedJAR/generatedSbconfig.jar">
+    <p:projectLevel includeSystem="false">
+      <p:project>CalculatorConsumption</p:project>
+    </p:projectLevel>
+  </p:configjar>
+</p:configjarSettings>
