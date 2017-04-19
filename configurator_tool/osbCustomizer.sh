@@ -29,4 +29,5 @@ export CLASSPATH=./*.jar:$CLASSPATH
 echo $CLASSPATH
 echo $PATH
 java -version
-java weblogic.WLST -i osbCustomizer.py $1
+#java weblogic.WLST -i osbCustomizer.py $1
+/root/Oracle/Middleware/oracle_common/common/bin/wlst.sh -i osbCustomizer.py $1
