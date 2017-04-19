@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-WL_HOME="../osb_11G_dependencies/wlserver_10.3"
-OSB_HOME="../osb_11G_dependencies/Oracle_OSB1"
-export JAVA_HOME="../osb_11G_dependencies/jrockit-jdk1.6.0_37-R28.2.5-4.1.0"
+WL_HOME="/root/Oracle/Middleware/wlserver_10.3"
+OSB_HOME="/root/Oracle/Middleware/Oracle_OSB1"
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
 export PATH=${JAVA_HOME}/bin:$PATH
 export CLASSPATH=${WL_HOME}/server/lib/weblogic.jar:$CLASSPATH
@@ -29,6 +29,6 @@ export CLASSPATH=./*.jar:$CLASSPATH
 echo $CLASSPATH
 echo $PATH
 java -version
-#java weblogic.WLST -i osbCustomizer.py $1
-/root/Oracle/Middleware/oracle_common/common/bin/wlst.sh -i osbCustomizer.py $1
+java weblogic.WLST -i osbCustomizer.py $1
+#/root/Oracle/Middleware/oracle_common/common/bin/wlst.sh -i osbCustomizer.py $1
 #/root/Oracle/Middleware/Oracle_OSB1/tools/configjar/wlst.sh -i osbCustomizer.py $1
