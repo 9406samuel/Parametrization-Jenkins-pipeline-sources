@@ -1619,7 +1619,7 @@ try:
 	exec open(str(f),'r')
 
 	deployFile=executeCustomization()
-	#deployToOsb(deployFile)
+	deployToOsb(deployFile)
 
 except Exception, err:
 	print ' Failed Execute customization file: '+ f 
