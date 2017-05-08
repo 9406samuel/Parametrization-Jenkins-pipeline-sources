@@ -262,7 +262,7 @@ def connectToOSB():
 	print ' '
 	print '------------------------------------'
 	print ' --- Connecting to OSB server '
-	uri = 't3://' + SB_SERVER['ListenAddress'] + ':' + str(SB_SERVER['ListenPort'])
+	uri = 'http://' + SB_SERVER['ListenAddress'] + ':' + str(SB_SERVER['ListenPort'])
 	try:
 		connect(SB_SERVER['Username'],SB_SERVER['Password'],uri)
 		domainRuntime()
