@@ -17,6 +17,8 @@ A continuacion se describe cada una de las carpetas existentes:
 	* generated jar: el .jar generado se almacenará en esta carpeta.
 	* OSB-Config-WLST-Configurator tool: herramienta para modificar los parametros de un proyecto de bus.
 
+Comando para ejecutar la instalacion del bus 11g dentro del contenedor: 
+su - weblogic -c /root/Oracle/Middleware/install_osb.sh
 #############################################################################
 En construcción:
 
