@@ -28,6 +28,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	     </goals>
 	     <configuration>
                <projectFile>calculator-service-tests-soapui-project.xml</projectFile>
+	       <outputFolder>${basedir}/target/soapui</outputFolder>
+	       <junitReport>true</junitReport>
+               <exportAll>true</exportAll>
+	       <printReport>true</printReport>
 	     </configuration>
 	    </execution>
 	   </executions>
