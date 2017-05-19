@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="89ced628-ccb9-4766-b959-a96a6d7bedee" activeEnvironment="Default" name="calculator service tests" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a3dcbd93-ff89-4fa5-8355-b2ed858efbc8" wsaVersion="NONE" name="CalculatorWSPortBinding" type="wsdl" bindingName="{http://calculator.me.org/}CalculatorWSPortBinding" soapVersion="1_1" anonymous="optional" definition="http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?wsdl"><con:part><con:url>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?wsdl</con:url><con:content><![CDATA[<WL5G3N0:definitions name="CalculatorWS" targetNamespace="http://calculator.me.org/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://calculator.me.org/" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://calculator.me.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://calculator.me.org/" schemaLocation="http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?SCHEMA%2FCalculatorConsumption%2FXMLSchema_-1140609654"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="addition">
+    <WL5G3N0:part element="WL5G3N1:addition" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="additionResponse">
+    <WL5G3N0:part element="WL5G3N1:additionResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="product">
+    <WL5G3N0:part element="WL5G3N1:product" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="productResponse">
+    <WL5G3N0:part element="WL5G3N1:productResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="division">
+    <WL5G3N0:part element="WL5G3N1:division" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="divisionResponse">
+    <WL5G3N0:part element="WL5G3N1:divisionResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="substraction">
+    <WL5G3N0:part element="WL5G3N1:substraction" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="substractionResponse">
+    <WL5G3N0:part element="WL5G3N1:substractionResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="CalculatorWS">
+    <WL5G3N0:operation name="addition">
+      <WL5G3N0:input message="WL5G3N1:addition"/>
+      <WL5G3N0:output message="WL5G3N1:additionResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="product">
+      <WL5G3N0:input message="WL5G3N1:product"/>
+      <WL5G3N0:output message="WL5G3N1:productResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="division">
+      <WL5G3N0:input message="WL5G3N1:division"/>
+      <WL5G3N0:output message="WL5G3N1:divisionResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="substraction">
+      <WL5G3N0:input message="WL5G3N1:substraction"/>
+      <WL5G3N0:output message="WL5G3N1:substractionResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="CalculatorWSPortBinding" type="WL5G3N1:CalculatorWS">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="addition">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="product">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="division">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="substraction">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="CalculatorWS">
+    <WL5G3N0:port binding="WL5G3N1:CalculatorWSPortBinding" name="CalculatorWSPort">
+      <WL5G3N2:address location="http://localhost:7101/CalculatorConsumption/Calculator_PS"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?SCHEMA%2FCalculatorConsumption%2FXMLSchema_-1140609654</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Oracle JAX-WS 2.1.5.-->
+<xs:schema version="1.0" targetNamespace="http://calculator.me.org/" xmlns:tns="http://calculator.me.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="addition" type="tns:addition"/>
+  <xs:element name="additionResponse" type="tns:additionResponse"/>
+  <xs:element name="division" type="tns:division"/>
+  <xs:element name="divisionResponse" type="tns:divisionResponse"/>
+  <xs:element name="product" type="tns:product"/>
+  <xs:element name="productResponse" type="tns:productResponse"/>
+  <xs:element name="substraction" type="tns:substraction"/>
+  <xs:element name="substractionResponse" type="tns:substractionResponse"/>
+  <xs:complexType name="substraction">
+    <xs:sequence>
+      <xs:element name="i" type="xs:int"/>
+      <xs:element name="j" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="substractionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="product">
+    <xs:sequence>
+      <xs:element name="i" type="xs:int"/>
+      <xs:element name="j" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addition">
+    <xs:sequence>
+      <xs:element name="i" type="xs:int"/>
+      <xs:element name="j" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="additionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="division">
+    <xs:sequence>
+      <xs:element name="i" type="xs:int"/>
+      <xs:element name="j" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="divisionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:7101/CalculatorConsumption/Calculator_PS</con:endpoint></con:endpoints><con:operation id="f7d52abd-7af7-4f35-8b33-f8463b561ce2" isOneWay="false" action="" name="addition" bindingOperationName="addition" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b304c794-6921-4c84-9767-4951cb91cc78" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:addition>\r
+         <i>3</i>\r
+         <j>1</j>\r
+      </cal:addition>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://calculator.me.org/CalculatorWS/additionRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="dc8b09ab-e5e7-4419-a0aa-e8f2698d7dcc" isOneWay="false" action="" name="division" bindingOperationName="division" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0130c802-917e-45e1-bed7-7bd7b2fd9fdf" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:division>\r
+         <i>4</i>\r
+         <j>6</j>\r
+      </cal:division>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://calculator.me.org/CalculatorWS/divisionRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="0cdbe798-36e8-43dc-954d-7e4af74d6fe6" isOneWay="false" action="" name="product" bindingOperationName="product" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="551f7581-5c97-4a0f-9106-365ef315eb70" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:product>\r
+         <i>6</i>\r
+         <j>7</j>\r
+      </cal:product>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://calculator.me.org/CalculatorWS/productRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="39c8955f-a9d5-4eac-a677-62b0330b1bd3" isOneWay="false" action="" name="substraction" bindingOperationName="substraction" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fc76f952-81ca-4f7c-87ac-5450e846072e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:substraction>\r
+         <i>5</i>\r
+         <j>19</j>\r
+      </cal:substraction>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://calculator.me.org/CalculatorWS/substractionRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="dd472a4f-bd95-4374-a6ba-868394071485" name="CalculatorWSPortBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="053fd73e-a26b-4083-8eee-785482fc34fd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="addition TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="7d802089-a665-4adc-8256-e51fbd37344b" name="addition"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorWSPortBinding</con:interface><con:operation>addition</con:operation><con:request name="addition" id="70afb76b-47ee-4322-afb5-4535b7d75891"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:addition>\r
+         <i>6</i>\r
+         <j>h</j>\r
+      </cal:addition>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="f43985b2-6638-4b1b-b6a3-0495e9f40d3d" name="Not SOAP Fault"/><con:assertion type="Simple NotContains" id="8dd5abfd-0ac2-40c9-818d-83ed338c3b8f" name="Not Contains"><con:configuration><token>0</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://calculator.me.org/CalculatorWS/additionRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="fbb03643-3e4c-4097-9af4-dfb6c48748bc" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="4e960d82-130a-4e1c-9b0e-3186d8e3570a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="division TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="f15c8c46-772c-4744-81d0-9e82e15772b4" name="division"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorWSPortBinding</con:interface><con:operation>division</con:operation><con:request name="division" id="c2945185-b7c6-4433-a768-db33754eeb56"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:division>\r
+         <i>7</i>\r
+         <j>0</j>\r
+      </cal:division>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b0b05156-1926-498c-bf39-d385c14b12da" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://calculator.me.org/CalculatorWS/divisionRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="88613943-b68c-4488-887d-cbd3c62580e8" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="418bd056-2eb6-4dd9-8bd8-85352b0d7bc3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="product TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="db9c9c61-c25c-411f-bb38-56fe7f793f1d" name="product"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorWSPortBinding</con:interface><con:operation>product</con:operation><con:request name="product" id="a7e0fc83-f280-46f3-8bfa-a2cca226d6c0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:product>\r
+         <i>7</i>\r
+         <j>p</j>\r
+      </cal:product>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="91ca52c9-01dc-4ed7-97c6-3d5bcaeefef6" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://calculator.me.org/CalculatorWS/productRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="0f7333c4-02fa-4afd-84f6-564584cac536" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="94bdf64e-73fc-4735-b972-6808b0df20b3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="substraction TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="b642058f-2740-48c8-81b6-673cfa491490" name="substraction"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorWSPortBinding</con:interface><con:operation>substraction</con:operation><con:request name="substraction" id="b09bed8a-14d7-49a3-a8e5-473cebd07dbd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator.me.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cal:substraction>\r
+         <i>7</i>\r
+         <j>2</j>\r
+      </cal:substraction>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="c653cfd7-4c92-4fe4-9a95-4e16eb1f0a6c" name="Not SOAP Fault"/><con:assertion type="Invalid HTTP Status Codes" id="3d354e0c-5ab2-4faa-8c66-4fa410cf48fe" name="Invalid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://calculator.me.org/CalculatorWS/substractionRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="70273e5d-32c2-4d25-bcea-78749c42c9ee" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
