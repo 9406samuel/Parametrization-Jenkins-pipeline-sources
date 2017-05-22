@@ -2,7 +2,7 @@
 <con:soapui-project id="89ced628-ccb9-4766-b959-a96a6d7bedee" activeEnvironment="Default" name="calculator service tests" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a3dcbd93-ff89-4fa5-8355-b2ed858efbc8" wsaVersion="NONE" name="CalculatorWSPortBinding" type="wsdl" bindingName="{http://calculator.me.org/}CalculatorWSPortBinding" soapVersion="1_1" anonymous="optional" definition="http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?wsdl"><con:part><con:url>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?wsdl</con:url><con:content><![CDATA[<WL5G3N0:definitions name="CalculatorWS" targetNamespace="http://calculator.me.org/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://calculator.me.org/" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
   <WL5G3N0:types>
     <xsd:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://calculator.me.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <xsd:import namespace="http://calculator.me.org/" schemaLocation="http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?SCHEMA%2FCalculatorConsumption%2FXMLSchema_-1140609654"/>
+      <xsd:import namespace="http://calculator.me.org/" schemaLocation="http://10.201.180.88:7101/CalculatorConsumption/Calculator_PS?SCHEMA%2FCalculatorConsumption%2FXMLSchema_-1140609654"/>
     </xsd:schema>
   </WL5G3N0:types>
   <WL5G3N0:message name="addition">
@@ -91,7 +91,7 @@
       <WL5G3N2:address location="http://localhost:7101/CalculatorConsumption/Calculator_PS"/>
     </WL5G3N0:port>
   </WL5G3N0:service>
-</WL5G3N0:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.201.180.42:7101/CalculatorConsumption/Calculator_PS?SCHEMA%2FCalculatorConsumption%2FXMLSchema_-1140609654</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Oracle JAX-WS 2.1.5.-->
+</WL5G3N0:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.201.180.88:7101/CalculatorConsumption/Calculator_PS?SCHEMA%2FCalculatorConsumption%2FXMLSchema_-1140609654</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Oracle JAX-WS 2.1.5.-->
 <xs:schema version="1.0" targetNamespace="http://calculator.me.org/" xmlns:tns="http://calculator.me.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="addition" type="tns:addition"/>
   <xs:element name="additionResponse" type="tns:additionResponse"/>
